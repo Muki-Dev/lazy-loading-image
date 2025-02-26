@@ -28,7 +28,7 @@ const LazyImages = ({ src, alt}) => {
 			<img
 				ref={imgRef}
 				className='lazy-image'
-				src={isVisible ? src: 'https://placehold.co/600x400'}
+				src={ isVisible ? src : 'https://fastly.picsum.photos/id/175/2896/1944.jpg?hmac=djMSfAvFgWLJ2J3cBulHUAb4yvsQk0d4m4xBJFKzZrs'}
 				alt={alt}
 				loading='lazy' 
 				/>
