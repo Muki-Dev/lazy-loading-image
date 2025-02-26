@@ -1,0 +1,11 @@
+ .app-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ }
+
+ h1{
+  fonst-size: 2rem;
+  margin-bottom: 20px;
+ }

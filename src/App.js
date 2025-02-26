@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import PlantList from './components/PlantList';
+import './styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const PlantsData = [
+  { id:1, name:'Ficus', image:'https://placehold.co/600x400'},
+  { id:2, name:'Monstera', image:'https://placehold.co/600x400'},
+  { id:3, name:'Cactus', image:'https://placehold.co/600x400'},
+
+];
+
+const App = () => {
+  return(
+    <div className='app-container'>
+      <h1>Plant Gallery</h1>
+      <PlantList plants={PlantsData} />
     </div>
-  );
-}
+    );
+};
 
 export default App;

@@ -1,0 +1,13 @@
+/* src/styles/LazyImages.css */
+.lazy-image{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	transition: cover;
+	transition: opacity 0.3s ease-in-out;
+	opacity: 0;
+}
+
+.lazy-image[src]{
+	opacity: 1;
+}

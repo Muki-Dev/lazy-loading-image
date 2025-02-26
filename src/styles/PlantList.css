@@ -1,0 +1,12 @@
+/* src/styles/PlantList.css */
+.plant-list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.plant-Item{
+	width: 300px;
+	text-align: center;
+}
